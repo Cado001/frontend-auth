@@ -1,38 +1,67 @@
-.App {
+*,
+*::after,
+*::before {
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  box-sizing: inherit;
+  background-color: aqua;
+}
+
+header {
+  padding: 20PX 50PX;
+  box-shadow: 0 1px #a94141;
+  background-color: rgb(137, 148, 156);
+  text-decoration-color: #32e022;
+}
+
+nav>ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+header a {
+  text-decoration: none;
+
+  color: #555;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  color: cadetblue;
+  background-color: #27a11c;
+  font-weight: 500;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer>small {
+  padding-top: 2rem;
+}
+
+.container {
+  width:0 auto ;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact-page h2 {
+  font-size: 90px;
+  color: #555;
+  padding: 3rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact-page span {
+  padding: 2rem 0;
+  font-size: 20px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-page p {
+  margin: 2rem 0;
 }
